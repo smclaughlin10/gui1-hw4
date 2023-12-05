@@ -1,0 +1,43 @@
+<!--
+File: index.html
+GUI Assignment: HW4 - Using the jQuery Plugin/UI with Your Dynamic Table
+Sean Mclaughlin, UMass Lowell Computer Science,
+Sean_Mclaughlin1@student.uml.edu
+Copyright (c) 2023 by Sean. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by SM on November 27, 2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<title>Dynamic Table</title>
+	</head>
+	<body>
+		<h1>Interactive Dynamic Table</h1>
+		<main>
+			<div id="entireForm">
+				<form name="tableForm" id="tableForm">
+					<h2>Values of -50 to 50</h2>
+					<label for="startHorizontal">Min Column Value</label>
+					<input type="number" id="startHorizontal" name="startHorizontal" required>
+					<label for="endHorizontal">Max Column Value</label>
+					<input type="number" id="endHorizontal" name="endHorizontal" required>
+					<label for="startVertical">Min Row Value</label>
+					<input type="number" id="startVertical" name="startVertical" required>
+					<label for="endVertical">Max Row Value</label>
+					<input type="number" id="endVertical" name="endVertical" required>
+					<input type="button" id="submitBtn" value="Submit">
+				</form>
+			</div>
+			<div id="tableContainer">
+				<div id="myTable"></div>
+			</div>
+		</main>
+	</body>
+</html>

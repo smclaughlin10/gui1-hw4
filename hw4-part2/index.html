@@ -1,0 +1,55 @@
+<!--
+File: index.html
+GUI Assignment: HW4 - Using the jQuery Plugin/UI with Your Dynamic Table
+Sean Mclaughlin, UMass Lowell Computer Science,
+Sean_Mclaughlin1@student.uml.edu
+Copyright (c) 2023 by Sean. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by SM on December 4, 2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+		<script type="text/javascript" src="js/slider.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/tabs.js"></script>
+		<title>Dynamic Table</title>
+	</head>
+	<body>
+		<h1>Interactive Dynamic Table</h1>
+		<main>
+			<div id="entireForm">
+				<form name="tableForm" id="tableForm">
+					<h2>Values of -50 to 50</h2>
+					<label for="startHorizontal">Min Column Value</label>
+					<div id="shSlider" class="sliderAll"></div>
+					<input type="number" id="startHorizontal" name="startHorizontal" value="0" required>
+					<label for="endHorizontal">Max Column Value</label>
+					<div id="ehSlider" class="sliderAll"></div>
+					<input type="number" id="endHorizontal" name="endHorizontal" value="0" required>
+					<label for="startVertical">Min Row Value</label>
+					<div id="svSlider" class="sliderAll"></div>
+					<input type="number" id="startVertical" name="startVertical" value="0" required>
+					<label for="endVertical">Max Row Value</label>
+					<div id="evSlider" class="sliderAll"></div>
+					<input type="number" id="endVertical" name="endVertical" value="0" required>
+					<input type="button" id="saveTable" value="Save Table">
+					<input type="button" id="removeAllTabs" value="Remove All Tabs">
+				</form>
+			</div>
+			<div id="tableContainer">
+				<div id="myTable" class="tables"></div>
+				<div id="tabs" class="tables">
+					<ul id="tabList"></ul>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+/* File: style.css
+GUI Assignment: HW4 - Using the jQuery Plugin/UI with Your Dynamic Table
+Sean Mclaughlin, UMass Lowell Computer Science,
+Sean_Mclaughlin1@student.uml.edu
+Copyright (c) 2023 by Sean. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by SM on December 4, 2023 */
+
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	margin: 0 20px;
+}
+
+div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
